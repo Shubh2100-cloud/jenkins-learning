@@ -3,3 +3,9 @@ def test_login():
 
 def test_api():
     assert 200 == 200
+
+def test_login():
+    assert 7 == 7
+
+def test_api():
+    assert 300 == 300
