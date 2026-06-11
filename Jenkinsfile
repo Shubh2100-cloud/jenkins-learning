@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Python Script') {
             steps {
-                bat '"C:\\Users\\AiShu\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" hello.py'
+                bat '"C:\\Users\\aishj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" hello.py'
             }
         }
     }
