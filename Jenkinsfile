@@ -3,15 +3,15 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+        stage('Install Dependencies') {
             steps {
-                echo 'Code checkout done'
+                bat 'pip install pytest'
             }
         }
 
-        stage('Run Python Script') {
+        stage('Run Tests') {
             steps {
-                bat '"C:\\Users\\aishj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" hello.py'
+                bat 'pytest tests'
             }
         }
     }
