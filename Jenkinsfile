@@ -5,13 +5,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'pip install pytest'
+                bat '"C:\\Users\\aishj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pip install pytest'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'pytest tests'
+                bat '"C:\\Users\\aishj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest tests'
             }
         }
     }
